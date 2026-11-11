@@ -1,0 +1,98 @@
+.nav-wrapper{
+    background: var(--black-initial);
+    color: var(--white);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.nav-content{
+    max-width: 1300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.7rem 1rem;
+    margin: 0 auto;
+}
+
+.logo-content{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.cont-logo{
+   background: var(--white);
+   color: var(--black-initial);
+   width: 38px;
+   height: 38px;
+   border-radius: 10px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.logo{
+    font-size: 1.5rem;
+}
+
+.info-content{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.info{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.user-img{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition: transform 0.2s ease;
+    cursor: pointer;
+}
+
+.user-img:hover {
+    transform: scale(1.15);
+}
+
+.user-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.icon-user{
+    font-size: 1.5rem;
+    transition: transform 0.2s ease;
+}
+
+.icon-user:hover {
+    transform: scale(1.15);
+}
+
+.icon-down{
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.menu-profil{
+    padding: 0.5rem;
+    margin-top: 1.8rem;
+}
+
+.menuItem-profil{
+    display: flex;
+    gap: 0.5rem;
+}

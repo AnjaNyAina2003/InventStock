@@ -1,0 +1,11 @@
+# Backend (Python / Django)
+env/
+media/
+.env
+__pycache__/
+*pyc
+
+# Frontend ( React )
+node_modules/
+dist/
+.env.local

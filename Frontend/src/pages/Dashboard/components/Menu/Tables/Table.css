@@ -1,0 +1,235 @@
+/* Tableau */
+.cont-table {
+  width: 100%;
+  background: var(--black-chart);
+  border-radius: 7px;
+  margin: 5px 0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.tableWrapper {
+  overflow-x: auto;
+}
+
+.tableAffWrapper {
+  overflow-x: auto;
+  border-radius: 1rem;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+
+.th {
+  padding: 15px 20px;
+  text-align: left;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--white);
+  background-color: var(--bleu);
+  border-bottom: 1px solid #1e2840;
+}
+
+.thAff {
+  padding: 10px 15px;
+  text-align: center;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--white);
+  background-color: darkgreen;
+  border-bottom: 1px solid #1e2840;
+}
+
+
+.th.center {
+  text-align: center;
+}
+
+.tr {
+  border-bottom: 1px solid #1e2840;
+  height: 54px;
+}
+
+.emptyRow td {
+  border: none;
+  background: var(--black-chart);
+  color: var(--white);
+}
+
+.td {
+  padding: 12px 20px;
+  background: var(--black-chart);
+  color: #cbd5e1;
+  font-size: 13px;
+}
+
+.tdAff {
+  padding: 10px 20px;
+  background: var(--black-chart);
+  color: #cbd5e1;
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.tdAff.center {
+  text-align: center;
+}
+
+.td.center {
+  text-align: center;
+}
+
+.emptyCell {
+  padding: 24px 20px;
+  text-align: center;
+  background: var(--black-chart);
+  color: var(--white);
+  font-size: 13px;
+}
+
+.iconBtn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 13px;
+  padding: 6px 8px;
+  border-radius: 6px;
+  margin-right: 4px;
+}
+
+.iconBtnDanger {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 13px;
+  padding: 6px 8px;
+  border-radius: 6px;
+}
+
+.updt{
+  color: #6366f1;
+}
+
+.del{
+  color: #f87171;
+}
+
+.in{
+  color: #22C55E;
+}
+
+.out{
+  color: #EF4444;
+}
+
+.exp{
+  color: #17a2b8;
+}
+
+.reappro {  
+  color: #38bdf8;
+}
+
+.spaceIcon{
+  display: flex;
+  justify-content: space-around;
+}
+
+/* ── Pagination ── */
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+  padding: 12px 20px;
+  border-top: 1px solid #1e2840;
+}
+
+.pageBtn {
+  background: none;
+  border: 1px solid #1e2840;
+  border-radius: 6px;
+  color: #94a3b8;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.pageBtn:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+.pageInfo {
+  font-size: 12px;
+  color: #64748b;
+}
+
+/* reappro */
+.row-low-stock {
+  background: rgba(248, 113, 113, 0.08);
+}
+
+.row-low-stock:hover {
+  background: rgba(248, 113, 113, 0.14);
+}
+
+.low-stock-icon {
+  color: #f87171;
+  margin-left: 6px;
+  font-size: 13px;
+}
+
+/* Squelette de table pour chargement */
+.skeleton-cell {
+  height: 14px;
+  width: 80%;
+  border-radius: 4px;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.05) 25%,
+    rgba(255, 255, 255, 0.13) 50%,
+    rgba(255, 255, 255, 0.05) 75%
+  );
+  background-size: 200% 100%;
+  animation: skeleton-shimmer 1.4s ease-in-out infinite;
+  margin: 0 auto;
+}
+
+.skeleton-header {
+  height: 10px;
+  width: 50%;
+  opacity: 0.6;
+}
+
+.skeleton-actions {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+}
+
+.skeleton-icon {
+  width: 28px;
+  height: 28px;
+  border-radius: 6px;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.05) 25%,
+    rgba(255, 255, 255, 0.13) 50%,
+    rgba(255, 255, 255, 0.05) 75%
+  );
+  background-size: 200% 100%;
+  animation: skeleton-shimmer 1.4s ease-in-out infinite;
+}
+
+@keyframes skeleton-shimmer {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}

@@ -1,0 +1,172 @@
+.card-content{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.card{
+    border-radius: 1rem;
+    padding: 0rem 0rem 0rem 0.5rem;
+}
+
+.first-card{
+    background: royalblue;
+}
+
+.second-card{
+    background: seagreen;
+}
+
+.third-card{
+    background: goldenrod;
+}
+
+.last-card{
+    background: firebrick;
+}
+
+.first-cardColor{
+    color: royalblue;
+}
+
+.second-cardColor{
+    color: seagreen;
+}
+
+.third-cardColor{
+    color: goldenrod;
+}
+
+.last-cardColor{
+    color: firebrick;
+}
+
+.info-card{
+    background: var(--white);
+    padding: 1rem 1.5rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.title-card {
+    width: 8rem;
+}
+
+.produit{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #6b7280;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.valeur{
+    font-size: 27px;
+    font-weight: 800;
+    line-height: 1;
+}
+
+.cont-icône-prod{
+    width: 40px;
+    height: 40px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    color: var(--white);
+}
+
+.icône-prod{
+    font-size: 1.5rem;
+}
+
+.other-prodInfo{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    padding: 1rem
+}
+
+.graph-prod{
+    background: var(--white);
+}
+
+.tab-info{
+  background: var(--black-chart);
+  color: var(--white);
+  border: 1px solid rgb(255 255 255 / 7%);
+  border-radius: 20px;
+  padding: 28px 24px;
+  min-height: 260px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 19rem;
+}
+
+.panel-title{
+  color: var(--white);
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.table-rows{ 
+  display: flex; 
+  flex-direction: column; 
+  gap: 10px; 
+}
+
+.table-row{
+  display: flex; 
+  align-items: center; 
+  justify-content: space-between;
+  padding: 10px 14px;
+  background: var(--blue-dark);
+  border-radius: 10px;
+  font-size: 13px;
+  width: 16rem;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.table-row:hover {
+    transform: translateX(3px);
+    background: #1e2740;
+}
+
+.table-row .name{ 
+  display: inline-block;
+  max-width: 105px;
+  color: var(--white); 
+  font-weight: 500; 
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.table-row .qty{
+  color: var(--bleu-claire); 
+}
+
+.table-row .badge{
+  font-size: 11px; 
+  font-weight: 600;
+  padding: 3px 8px; 
+  border-radius: 6px;
+}
+
+.badge.in{ 
+  background: rgba(52,211,153,0.12); 
+  color: #34d399; 
+}
+
+.badge.out{ 
+  background: rgba(248,113,113,0.12); 
+  color: #f87171; 
+}

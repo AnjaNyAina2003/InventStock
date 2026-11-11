@@ -1,0 +1,9 @@
+.body-content{
+    margin-left: 220px;
+    padding: 0.7rem;
+    height: 100%;
+    width: 100%;
+    background: var(--white-ghost);
+    max-width: 1300px;
+    min-height: calc(100vh - 60px);
+}

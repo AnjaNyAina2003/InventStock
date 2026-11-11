@@ -1,0 +1,302 @@
+.auth-body{
+    background: var(--black-initial);
+    min-height: 100vh;
+}
+
+.choice-border{
+    display: flex;
+    gap: 1rem;
+}
+
+.auth-choice{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.7rem 1rem;
+    background: var(--black-initial);
+    color: var(--white);
+    /* border-bottom: solid 1px var(--white); */
+}
+
+.auth-choice button:active, .choice-button.active{
+    background: var(--black-initial);
+    color: var(--white);
+    border: solid 1.5px var(--white);
+}
+
+.auth-choice a{
+    text-decoration: none;
+}
+
+.choice-button{
+    width: 8rem;
+    background: var(--white);
+    color: var(--black-initial);
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 500;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+    
+/* 
+.login-button{
+    border-radius: 14px 0 0 14px;
+}
+
+.signup-button{
+    border-radius: 0 16px 16px 0;
+} */
+
+.form-content{
+    display: flex;
+    justify-content: center;
+    color: var(--black-initial);
+    margin-top: 2rem;
+}
+
+.title-form{
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.submit-form{
+    margin: 20px 0 10px 0;
+    background-color: var(--black-initial);
+    border: none;
+    color: var(--white);
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 10px;
+    height: 50px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.last-icon{
+    right: 4.5rem;
+    position: absolute;
+    cursor: pointer;
+}
+
+.last-iconSign{
+    right: 1rem;
+    position: absolute;
+    cursor: pointer;
+}
+/* Login */
+
+.formlog-content{
+    border: 2px solid var(--black-initial);
+    background: var(--white);
+    padding: 2rem;
+    border-radius: 4.2rem;
+    border-style: solid;
+    width: 30rem;
+    height: 27rem;
+}
+
+.cont-inputLog{
+    margin-top: 35px;
+    margin-left: 5px;
+    margin-bottom: 28px;
+}
+
+.inputLog{
+    width: 18rem;
+    height: 3rem;
+    padding: 0 0.3rem;
+    font-size: 1rem;
+    border-top: none;
+    border-bottom: var(--black-initial) solid 1.5px;
+    border-left: none;
+    border-right: none;
+    background-color: var(--black-input);
+}
+
+.inputAuth{
+  margin-bottom: 50px;
+}
+
+.inputAuthSign{
+  margin-top: 37px;
+  margin-bottom: 20px;
+}
+
+.butAuth{
+  margin-left: 12px;
+  width: 95%;
+}
+
+.cont-infoUser{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+/* Signup */
+
+.formsign-content{
+    border: 2px solid var(--black-initial);
+    background: var(--white);
+    padding: 2rem;
+    border-radius: 4.2rem;
+    border-style: solid;
+    width: 40rem;
+    height: 27rem;
+}
+
+.floating-divSign{
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 3rem;
+    margin-left: 1rem;
+    margin-bottom: 2.5rem;
+    padding: 0 0.7rem 0 2.5rem;
+    font-size: 1rem;
+    border-left: none;
+    background-color: var(--black-input);
+    transition: 0.25s;
+}
+
+.floating-divSign:focus-within {
+  background-color: var(--white);
+}
+
+.floating-divSign label {
+  position: absolute;
+  left: 50px; 
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--black-fond);
+  font-size: 16px;
+  font-weight: 400;
+  pointer-events: none;
+  transition: 0.25s;
+}
+
+.floating-divSign input:focus + label,
+.floating-divSign.filled label {
+  top: -0.1rem;
+  left: 20px;
+  font-size: 15px;
+  background: var(--white);
+  color: var(--black-fond);
+  font-weight: 500;
+}
+
+.floating-divSign input:focus{
+  outline: none;
+  box-shadow: none;
+}
+
+.floating-divSign select:focus + label,
+.floating-divSign.filled label {
+  top: -0.1rem;
+  left: 20px;
+  font-size: 12px;
+  background: var(--white);
+  color: var(--black-fond);
+  font-weight: 400;
+}
+
+.floating-divSign select:focus{
+  outline: none;
+  box-shadow: none;
+  background: var(--white);
+}
+
+.inputSign{
+    width: 14rem;
+    height: 3rem;
+    padding: 0 0.3rem;
+    font-size: 1rem;
+    border-top: none;
+    border-bottom: var(--black-initial) solid 1.5px;
+    border-left: none;
+    border-right: none;
+    background-color: var(--black-input);
+}
+
+.info-perso{
+    display: flex;
+    justify-content: space-around;
+}
+
+.mdp-sign{
+    margin: 0 6rem;
+}
+
+.text-inputSign {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  position: static;
+  margin-bottom: 1rem;
+}
+
+.text-inputSign label.text {
+    font-size: 1rem;
+    color: var(--black-initial);
+    font-weight: 700;
+    position: relative;
+    top: 0.5rem;
+    margin: 0 0 0 7rem;
+    padding: 0 3px;
+    background: var(--white);
+    width: fit-content;
+}
+
+.text-inputSign input[type=text].input {
+  padding: 11px 10px;
+  font-size: 0.95rem;
+  border: none;
+  background: #e8e8e8;
+  margin: 0 .5rem;
+  width: 20rem;
+}
+
+.text-inputSign input[type=text].input:focus {
+  outline: none;
+}
+
+/* Input-text */
+
+.text-input {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  position: static;
+  margin-bottom: 1rem;
+}
+
+.text-input label.text {
+  font-size: 1rem;
+  color: var(--black-initial);
+  font-weight: 700;
+  position: relative;
+  top: 0.5rem;
+  margin: 0 0 0 15px;
+  padding: 0 3px;
+  background: var(--white);
+  width: fit-content;
+}
+
+.text-input input[type=text].input {
+  padding: 11px 10px;
+  font-size: 0.95rem;
+  border: none;
+  background: #e8e8e8;
+  margin: 0 .5rem;
+  width: 20rem;
+}
+
+.text-input input[type=text].input:focus {
+  outline: none;
+}

@@ -50,7 +50,7 @@ Les imports/exports CSV sont compatibles avec Excel (format français, séparate
 1. **Cloner le dépôt**
 
    ```bash
-   git clone https://github.com/tonpseudo/InventStockManaging.git
+   git clone https://github.com/AnjaNyAina2003/InventStockManaging.git
    cd InventStockManaging/Backend/stock_api
    ```
 

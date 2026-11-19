@@ -414,7 +414,7 @@ input{
   position: fixed;
   background: var(--black-initial);
   color: var(--white);
-  border-radius: 1.5rem;
+  border-radius: 0.5rem 0.5rem 1.5rem 1.5rem;
 }
 
 .list-content>ul{

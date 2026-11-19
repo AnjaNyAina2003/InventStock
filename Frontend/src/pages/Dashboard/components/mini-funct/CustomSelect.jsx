@@ -2,16 +2,6 @@ import React, { useState, useRef, useEffect } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCheck } from '@fortawesome/free-solid-svg-icons'
 
-/**
- * CustomSelect — remplace les <select> natifs pour des options joliment stylisées.
- * Props :
- *   name        — string   : nom du champ (identique à l'ancien <select name="...">)
- *   value       — string   : valeur contrôlée
- *   onChange    — function : reçoit un event synthétique { target: { name, value } }
- *   options     — array    : [{ value, label }]
- *   className   — string   : classes CSS supplémentaires (ex: "input-select max-inpWidth")
- *   placeholder — string   : label de l'option vide (optionnel)
- */
 export default function CustomSelect({
   name,
   value,
